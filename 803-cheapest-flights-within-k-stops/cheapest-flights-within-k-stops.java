@@ -13,7 +13,6 @@ class Solution {
         int[][] dist = new int[n][k + 2]; 
         for (int[] row : dist) Arrays.fill(row, Integer.MAX_VALUE);
         dist[src][0] = 0;
-
         while (!pq.isEmpty()) {
             int[] state = pq.poll();
             int cost = state[0], u = state[1], stops = state[2];
